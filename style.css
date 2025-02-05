@@ -11,7 +11,7 @@ body {
 }
 
 #container {
-    display: flex;
+    display: flex;  
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -75,4 +75,32 @@ button {
     border: 2px solid #d0d0d0;
     border-radius: 8px;
     color: #333;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #question {
+        font-size: 36px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    #yes-button {
+        font-size: 18px;
+    }
+
+    #no-button {
+        font-size: 18px;
+    }
+
+    #valentine-message {
+        font-size: 24px;
+    }
+
+    #congrats-message {
+        font-size: 28px;
+    }
 }
