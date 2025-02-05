@@ -26,13 +26,18 @@ body {
     width: 100%;
 }
 
-#question {
-    font-family: 'Lucida Handwriting', 'Brush Script MT', cursive;
-    font-size: 52px;
-}
-
 #options {
     margin-top: 20px; 
+}
+
+#no-button {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+#yes-button {
+    max-width: 100%;
 }
 
 button {
@@ -48,11 +53,18 @@ button {
     transition: all 0.2s ease; /* Add smooth transition for changes */
 }
 
+#question {
+    font-family: 'Lucida Handwriting', 'Brush Script MT', cursive;
+    font-size: 52px;
+    text-align: center;
+}
+
 #valentine-message {
     font-size: 32px;
     color: #FF1493;
     margin-top: 20px;
     font-family: 'Comic Sans MS', cursive;
+    text-align: center;
 }
 
 #congrats-message {
@@ -80,7 +92,7 @@ button {
 /* Mobile Styles */
 @media (max-width: 768px) {
     #question {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     button {
@@ -88,12 +100,9 @@ button {
         padding: 8px 16px;
     }
 
-    #yes-button {
-        font-size: 18px;
-    }
-
     #no-button {
-        font-size: 18px;
+        width: auto;
+        max-width: 90%; /* Keep it within 90% of the screen width */
     }
 
     #valentine-message {
